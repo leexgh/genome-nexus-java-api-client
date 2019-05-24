@@ -26,15 +26,17 @@ import java.util.ArrayList;
 import java.util.List;
 import org.genome_nexus.client.ColocatedVariant;
 import org.genome_nexus.client.HotspotAnnotation;
+import org.genome_nexus.client.IntergenicConsequences;
 import org.genome_nexus.client.MutationAssessorAnnotation;
 import org.genome_nexus.client.MyVariantInfoAnnotation;
+import org.genome_nexus.client.PtmAnnotation;
 import org.genome_nexus.client.TranscriptConsequence;
 import org.genome_nexus.client.VariantAnnotationSummary;
 
 /**
  * VariantAnnotation
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T12:23:53.961-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-24T00:42:20.801-04:00")
 public class VariantAnnotation {
   @SerializedName("allele_string")
   private String alleleString = null;
@@ -60,6 +62,9 @@ public class VariantAnnotation {
   @SerializedName("id")
   private String id = null;
 
+  @SerializedName("intergenic_consequences")
+  private List<IntergenicConsequences> intergenicConsequences = new ArrayList<IntergenicConsequences>();
+
   @SerializedName("most_severe_consequence")
   private String mostSevereConsequence = null;
 
@@ -68,6 +73,9 @@ public class VariantAnnotation {
 
   @SerializedName("my_variant_info")
   private MyVariantInfoAnnotation myVariantInfo = null;
+
+  @SerializedName("ptms")
+  private PtmAnnotation ptms = null;
 
   @SerializedName("seq_region_name")
   private String seqRegionName = null;
@@ -236,6 +244,29 @@ public class VariantAnnotation {
     this.id = id;
   }
 
+  public VariantAnnotation intergenicConsequences(List<IntergenicConsequences> intergenicConsequences) {
+    this.intergenicConsequences = intergenicConsequences;
+    return this;
+  }
+
+  public VariantAnnotation addIntergenicConsequencesItem(IntergenicConsequences intergenicConsequencesItem) {
+    this.intergenicConsequences.add(intergenicConsequencesItem);
+    return this;
+  }
+
+   /**
+   * intergenicConsequences
+   * @return intergenicConsequences
+  **/
+  @ApiModelProperty(required = true, value = "intergenicConsequences")
+  public List<IntergenicConsequences> getIntergenicConsequences() {
+    return intergenicConsequences;
+  }
+
+  public void setIntergenicConsequences(List<IntergenicConsequences> intergenicConsequences) {
+    this.intergenicConsequences = intergenicConsequences;
+  }
+
   public VariantAnnotation mostSevereConsequence(String mostSevereConsequence) {
     this.mostSevereConsequence = mostSevereConsequence;
     return this;
@@ -288,6 +319,24 @@ public class VariantAnnotation {
 
   public void setMyVariantInfo(MyVariantInfoAnnotation myVariantInfo) {
     this.myVariantInfo = myVariantInfo;
+  }
+
+  public VariantAnnotation ptms(PtmAnnotation ptms) {
+    this.ptms = ptms;
+    return this;
+  }
+
+   /**
+   * Post Translational Modifications
+   * @return ptms
+  **/
+  @ApiModelProperty(value = "Post Translational Modifications")
+  public PtmAnnotation getPtms() {
+    return ptms;
+  }
+
+  public void setPtms(PtmAnnotation ptms) {
+    this.ptms = ptms;
   }
 
   public VariantAnnotation seqRegionName(String seqRegionName) {
@@ -406,9 +455,11 @@ public class VariantAnnotation {
         Objects.equals(this.end, variantAnnotation.end) &&
         Objects.equals(this.hotspots, variantAnnotation.hotspots) &&
         Objects.equals(this.id, variantAnnotation.id) &&
+        Objects.equals(this.intergenicConsequences, variantAnnotation.intergenicConsequences) &&
         Objects.equals(this.mostSevereConsequence, variantAnnotation.mostSevereConsequence) &&
         Objects.equals(this.mutationAssessor, variantAnnotation.mutationAssessor) &&
         Objects.equals(this.myVariantInfo, variantAnnotation.myVariantInfo) &&
+        Objects.equals(this.ptms, variantAnnotation.ptms) &&
         Objects.equals(this.seqRegionName, variantAnnotation.seqRegionName) &&
         Objects.equals(this.start, variantAnnotation.start) &&
         Objects.equals(this.strand, variantAnnotation.strand) &&
@@ -418,7 +469,7 @@ public class VariantAnnotation {
 
   @Override
   public int hashCode() {
-    return Objects.hash(alleleString, annotationJSON, annotationSummary, assemblyName, colocatedVariants, end, hotspots, id, mostSevereConsequence, mutationAssessor, myVariantInfo, seqRegionName, start, strand, transcriptConsequences, variant);
+    return Objects.hash(alleleString, annotationJSON, annotationSummary, assemblyName, colocatedVariants, end, hotspots, id, intergenicConsequences, mostSevereConsequence, mutationAssessor, myVariantInfo, ptms, seqRegionName, start, strand, transcriptConsequences, variant);
   }
 
 
@@ -435,9 +486,11 @@ public class VariantAnnotation {
     sb.append("    end: ").append(toIndentedString(end)).append("\n");
     sb.append("    hotspots: ").append(toIndentedString(hotspots)).append("\n");
     sb.append("    id: ").append(toIndentedString(id)).append("\n");
+    sb.append("    intergenicConsequences: ").append(toIndentedString(intergenicConsequences)).append("\n");
     sb.append("    mostSevereConsequence: ").append(toIndentedString(mostSevereConsequence)).append("\n");
     sb.append("    mutationAssessor: ").append(toIndentedString(mutationAssessor)).append("\n");
     sb.append("    myVariantInfo: ").append(toIndentedString(myVariantInfo)).append("\n");
+    sb.append("    ptms: ").append(toIndentedString(ptms)).append("\n");
     sb.append("    seqRegionName: ").append(toIndentedString(seqRegionName)).append("\n");
     sb.append("    start: ").append(toIndentedString(start)).append("\n");
     sb.append("    strand: ").append(toIndentedString(strand)).append("\n");

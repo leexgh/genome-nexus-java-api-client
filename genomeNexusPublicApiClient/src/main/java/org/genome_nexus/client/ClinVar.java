@@ -30,7 +30,7 @@ import org.genome_nexus.client.Hgvs;
 /**
  * ClinVar
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T12:23:53.961-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-24T00:42:20.801-04:00")
 public class ClinVar {
   @SerializedName("_license")
   private String license = null;

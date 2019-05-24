@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **exon** | **String** |  |  [optional]
 **geneId** | **String** | Ensembl gene id |  [optional]
 **geneSymbol** | **String** | Hugo gene symbol |  [optional]
-**hgncId** | **Integer** | HGNC id |  [optional]
+**hgncId** | **String** | HGNC id |  [optional]
 **hgvsc** | **String** | HGVSc |  [optional]
 **hgvsp** | **String** | HGVSp |  [optional]
 **polyphenPrediction** | **String** | Polyphen Prediction |  [optional]

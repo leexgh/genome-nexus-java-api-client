@@ -191,7 +191,7 @@ public class AnnotationSummaryControllerApi {
     }
     /**
      * Build call for fetchVariantAnnotationSummaryPOST
-     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (required)
+     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (GRCh37) or [\&quot;1:g.182712A&gt;C\&quot;, \&quot;2:g.265023C&gt;T\&quot;, \&quot;3:g.319781del\&quot;, \&quot;19:g.110753dup\&quot;, \&quot;1:g.1385015_1387562del\&quot;] (GRCh38) (required)
      * @param isoformOverrideSource Isoform override source. For example uniprot (optional)
      * @param projection Indicates whether to return summary for all transcripts or only for canonical transcript (optional, default to ALL)
      * @param progressListener Progress listener
@@ -261,7 +261,7 @@ public class AnnotationSummaryControllerApi {
     /**
      * Retrieves VEP annotation summary for the provided list of variants
      * 
-     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (required)
+     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (GRCh37) or [\&quot;1:g.182712A&gt;C\&quot;, \&quot;2:g.265023C&gt;T\&quot;, \&quot;3:g.319781del\&quot;, \&quot;19:g.110753dup\&quot;, \&quot;1:g.1385015_1387562del\&quot;] (GRCh38) (required)
      * @param isoformOverrideSource Isoform override source. For example uniprot (optional)
      * @param projection Indicates whether to return summary for all transcripts or only for canonical transcript (optional, default to ALL)
      * @return List&lt;VariantAnnotationSummary&gt;
@@ -275,7 +275,7 @@ public class AnnotationSummaryControllerApi {
     /**
      * Retrieves VEP annotation summary for the provided list of variants
      * 
-     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (required)
+     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (GRCh37) or [\&quot;1:g.182712A&gt;C\&quot;, \&quot;2:g.265023C&gt;T\&quot;, \&quot;3:g.319781del\&quot;, \&quot;19:g.110753dup\&quot;, \&quot;1:g.1385015_1387562del\&quot;] (GRCh38) (required)
      * @param isoformOverrideSource Isoform override source. For example uniprot (optional)
      * @param projection Indicates whether to return summary for all transcripts or only for canonical transcript (optional, default to ALL)
      * @return ApiResponse&lt;List&lt;VariantAnnotationSummary&gt;&gt;
@@ -290,7 +290,7 @@ public class AnnotationSummaryControllerApi {
     /**
      * Retrieves VEP annotation summary for the provided list of variants (asynchronously)
      * 
-     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (required)
+     * @param variants List of variants. For example [\&quot;X:g.66937331T&gt;A\&quot;,\&quot;17:g.41242962_41242963insGA\&quot;] (GRCh37) or [\&quot;1:g.182712A&gt;C\&quot;, \&quot;2:g.265023C&gt;T\&quot;, \&quot;3:g.319781del\&quot;, \&quot;19:g.110753dup\&quot;, \&quot;1:g.1385015_1387562del\&quot;] (GRCh38) (required)
      * @param isoformOverrideSource Isoform override source. For example uniprot (optional)
      * @param projection Indicates whether to return summary for all transcripts or only for canonical transcript (optional, default to ALL)
      * @param callback The callback to be executed when the API call finishes

@@ -25,6 +25,7 @@ import java.io.IOException;
 import org.genome_nexus.client.ClinVar;
 import org.genome_nexus.client.Cosmic;
 import org.genome_nexus.client.Dbsnp;
+import org.genome_nexus.client.Gnomad;
 import org.genome_nexus.client.Mutdb;
 import org.genome_nexus.client.Snpeff;
 import org.genome_nexus.client.Vcf;
@@ -32,7 +33,7 @@ import org.genome_nexus.client.Vcf;
 /**
  * MyVariantInfo
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T12:23:57.095-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-24T00:42:24.422-04:00")
 public class MyVariantInfo {
   @SerializedName("clinVar")
   private ClinVar clinVar = null;
@@ -42,6 +43,12 @@ public class MyVariantInfo {
 
   @SerializedName("dbsnp")
   private Dbsnp dbsnp = null;
+
+  @SerializedName("gnomadExome")
+  private Gnomad gnomadExome = null;
+
+  @SerializedName("gnomadGenome")
+  private Gnomad gnomadGenome = null;
 
   @SerializedName("hgvs")
   private String hgvs = null;
@@ -110,6 +117,42 @@ public class MyVariantInfo {
 
   public void setDbsnp(Dbsnp dbsnp) {
     this.dbsnp = dbsnp;
+  }
+
+  public MyVariantInfo gnomadExome(Gnomad gnomadExome) {
+    this.gnomadExome = gnomadExome;
+    return this;
+  }
+
+   /**
+   * gnomad_exome
+   * @return gnomadExome
+  **/
+  @ApiModelProperty(value = "gnomad_exome")
+  public Gnomad getGnomadExome() {
+    return gnomadExome;
+  }
+
+  public void setGnomadExome(Gnomad gnomadExome) {
+    this.gnomadExome = gnomadExome;
+  }
+
+  public MyVariantInfo gnomadGenome(Gnomad gnomadGenome) {
+    this.gnomadGenome = gnomadGenome;
+    return this;
+  }
+
+   /**
+   * gnomad_genome
+   * @return gnomadGenome
+  **/
+  @ApiModelProperty(value = "gnomad_genome")
+  public Gnomad getGnomadGenome() {
+    return gnomadGenome;
+  }
+
+  public void setGnomadGenome(Gnomad gnomadGenome) {
+    this.gnomadGenome = gnomadGenome;
   }
 
   public MyVariantInfo hgvs(String hgvs) {
@@ -215,6 +258,8 @@ public class MyVariantInfo {
     return Objects.equals(this.clinVar, myVariantInfo.clinVar) &&
         Objects.equals(this.cosmic, myVariantInfo.cosmic) &&
         Objects.equals(this.dbsnp, myVariantInfo.dbsnp) &&
+        Objects.equals(this.gnomadExome, myVariantInfo.gnomadExome) &&
+        Objects.equals(this.gnomadGenome, myVariantInfo.gnomadGenome) &&
         Objects.equals(this.hgvs, myVariantInfo.hgvs) &&
         Objects.equals(this.mutdb, myVariantInfo.mutdb) &&
         Objects.equals(this.snpeff, myVariantInfo.snpeff) &&
@@ -224,7 +269,7 @@ public class MyVariantInfo {
 
   @Override
   public int hashCode() {
-    return Objects.hash(clinVar, cosmic, dbsnp, hgvs, mutdb, snpeff, vcf, version);
+    return Objects.hash(clinVar, cosmic, dbsnp, gnomadExome, gnomadGenome, hgvs, mutdb, snpeff, vcf, version);
   }
 
 
@@ -236,6 +281,8 @@ public class MyVariantInfo {
     sb.append("    clinVar: ").append(toIndentedString(clinVar)).append("\n");
     sb.append("    cosmic: ").append(toIndentedString(cosmic)).append("\n");
     sb.append("    dbsnp: ").append(toIndentedString(dbsnp)).append("\n");
+    sb.append("    gnomadExome: ").append(toIndentedString(gnomadExome)).append("\n");
+    sb.append("    gnomadGenome: ").append(toIndentedString(gnomadGenome)).append("\n");
     sb.append("    hgvs: ").append(toIndentedString(hgvs)).append("\n");
     sb.append("    mutdb: ").append(toIndentedString(mutdb)).append("\n");
     sb.append("    snpeff: ").append(toIndentedString(snpeff)).append("\n");

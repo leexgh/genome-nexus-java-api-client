@@ -115,6 +115,9 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [AggregatedHotspots](docs/AggregatedHotspots.md)
+ - [AlleleCount](docs/AlleleCount.md)
+ - [AlleleFrequency](docs/AlleleFrequency.md)
+ - [AlleleNumber](docs/AlleleNumber.md)
  - [Alleles](docs/Alleles.md)
  - [ClinVar](docs/ClinVar.md)
  - [Cosmic](docs/Cosmic.md)
@@ -122,9 +125,11 @@ Class | Method | HTTP request | Description
  - [Gene](docs/Gene.md)
  - [GeneXref](docs/GeneXref.md)
  - [GenomicLocation](docs/GenomicLocation.md)
+ - [Gnomad](docs/Gnomad.md)
  - [Hg19](docs/Hg19.md)
  - [Hg38](docs/Hg38.md)
  - [Hgvs](docs/Hgvs.md)
+ - [Homozygotes](docs/Homozygotes.md)
  - [Hotspot](docs/Hotspot.md)
  - [IntegerRange](docs/IntegerRange.md)
  - [IsoformOverride](docs/IsoformOverride.md)

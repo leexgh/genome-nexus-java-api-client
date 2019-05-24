@@ -26,7 +26,7 @@ import java.io.IOException;
 /**
  * Hg38
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T12:23:57.095-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-24T00:42:24.422-04:00")
 public class Hg38 {
   @SerializedName("end")
   private String end = null;

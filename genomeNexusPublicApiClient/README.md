@@ -113,10 +113,15 @@ Class | Method | HTTP request | Description
 *PdbControllerApi* | [**fetchPdbHeaderPOST**](docs/PdbControllerApi.md#fetchPdbHeaderPOST) | **POST** /pdb/header | Retrieves PDB header info by a PDB id
 *PfamControllerApi* | [**fetchPfamDomainsByAccessionGET**](docs/PfamControllerApi.md#fetchPfamDomainsByAccessionGET) | **GET** /pfam/domain/{pfamAccession} | Retrieves a PFAM domain by a PFAM domain ID
 *PfamControllerApi* | [**fetchPfamDomainsByPfamAccessionPOST**](docs/PfamControllerApi.md#fetchPfamDomainsByPfamAccessionPOST) | **POST** /pfam/domain | Retrieves PFAM domains by PFAM domain accession IDs
+*PtmControllerApi* | [**fetchPostTranslationalModificationsByPtmFilterPOST**](docs/PtmControllerApi.md#fetchPostTranslationalModificationsByPtmFilterPOST) | **POST** /ptm/experimental | Retrieves PTM entries by Ensembl Transcript IDs
+*PtmControllerApi* | [**fetchPostTranslationalModificationsGET**](docs/PtmControllerApi.md#fetchPostTranslationalModificationsGET) | **GET** /ptm/experimental | Retrieves PTM entries by Ensembl Transcript ID
 
 
 ## Documentation for Models
 
+ - [AlleleCount](docs/AlleleCount.md)
+ - [AlleleFrequency](docs/AlleleFrequency.md)
+ - [AlleleNumber](docs/AlleleNumber.md)
  - [Alleles](docs/Alleles.md)
  - [ClinVar](docs/ClinVar.md)
  - [ColocatedVariant](docs/ColocatedVariant.md)
@@ -129,12 +134,15 @@ Class | Method | HTTP request | Description
  - [Gene](docs/Gene.md)
  - [GeneXref](docs/GeneXref.md)
  - [GenomicLocation](docs/GenomicLocation.md)
+ - [Gnomad](docs/Gnomad.md)
  - [Hg19](docs/Hg19.md)
  - [Hg38](docs/Hg38.md)
  - [Hgvs](docs/Hgvs.md)
+ - [Homozygotes](docs/Homozygotes.md)
  - [Hotspot](docs/Hotspot.md)
  - [HotspotAnnotation](docs/HotspotAnnotation.md)
  - [IntegerRange](docs/IntegerRange.md)
+ - [IntergenicConsequences](docs/IntergenicConsequences.md)
  - [MutationAssessor](docs/MutationAssessor.md)
  - [MutationAssessorAnnotation](docs/MutationAssessorAnnotation.md)
  - [Mutdb](docs/Mutdb.md)
@@ -143,6 +151,9 @@ Class | Method | HTTP request | Description
  - [PdbHeader](docs/PdbHeader.md)
  - [PfamDomain](docs/PfamDomain.md)
  - [PfamDomainRange](docs/PfamDomainRange.md)
+ - [PostTranslationalModification](docs/PostTranslationalModification.md)
+ - [PtmAnnotation](docs/PtmAnnotation.md)
+ - [PtmFilter](docs/PtmFilter.md)
  - [Snpeff](docs/Snpeff.md)
  - [TranscriptConsequence](docs/TranscriptConsequence.md)
  - [TranscriptConsequenceSummary](docs/TranscriptConsequenceSummary.md)

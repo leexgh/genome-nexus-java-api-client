@@ -28,7 +28,7 @@ import java.util.List;
 /**
  * TranscriptConsequence
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-03-06T12:23:53.961-05:00")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-24T00:42:20.801-04:00")
 public class TranscriptConsequence {
   @SerializedName("amino_acids")
   private String aminoAcids = null;
@@ -52,7 +52,7 @@ public class TranscriptConsequence {
   private String geneSymbol = null;
 
   @SerializedName("hgnc_id")
-  private Integer hgncId = null;
+  private String hgncId = null;
 
   @SerializedName("hgvsc")
   private String hgvsc = null;
@@ -224,7 +224,7 @@ public class TranscriptConsequence {
     this.geneSymbol = geneSymbol;
   }
 
-  public TranscriptConsequence hgncId(Integer hgncId) {
+  public TranscriptConsequence hgncId(String hgncId) {
     this.hgncId = hgncId;
     return this;
   }
@@ -234,11 +234,11 @@ public class TranscriptConsequence {
    * @return hgncId
   **/
   @ApiModelProperty(value = "HGNC id")
-  public Integer getHgncId() {
+  public String getHgncId() {
     return hgncId;
   }
 
-  public void setHgncId(Integer hgncId) {
+  public void setHgncId(String hgncId) {
     this.hgncId = hgncId;
   }
 

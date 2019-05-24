@@ -12,9 +12,11 @@ Name | Type | Description | Notes
 **end** | **Integer** | End position |  [optional]
 **hotspots** | [**HotspotAnnotation**](HotspotAnnotation.md) | Hotspot Annotation |  [optional]
 **id** | **String** | Variant id | 
+**intergenicConsequences** | [**List&lt;IntergenicConsequences&gt;**](IntergenicConsequences.md) | intergenicConsequences | 
 **mostSevereConsequence** | **String** | Most severe consequence |  [optional]
 **mutationAssessor** | [**MutationAssessorAnnotation**](MutationAssessorAnnotation.md) | Mutation Assessor Annotation |  [optional]
 **myVariantInfo** | [**MyVariantInfoAnnotation**](MyVariantInfoAnnotation.md) | My Variant Info Annotation |  [optional]
+**ptms** | [**PtmAnnotation**](PtmAnnotation.md) | Post Translational Modifications |  [optional]
 **seqRegionName** | **String** | Chromosome |  [optional]
 **start** | **Integer** | Start position |  [optional]
 **strand** | **Integer** | Strand (negative or positive) |  [optional]
