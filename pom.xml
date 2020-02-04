@@ -10,6 +10,8 @@
   <url>https://github.com/cBioPortal/genome-nexus-java-api-client/</url>
 
   <modules>
+    <module>oncokbPublicApiClient</module>
+    <module>oncokbPremiumApiClient</module>
     <module>genomeNexusPublicApiClient</module>
     <module>genomeNexusInternalApiClient</module>
   </modules>
